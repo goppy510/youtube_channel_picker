@@ -1,0 +1,32 @@
+{
+  "name": "YouTube Channel Id Picker",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "YouTubeのチャンネルページにてchannel_idを拾う",
+  "icons": {
+    "16": "src/assets/play_button_16.png",
+    "48": "src/assets/play_button_48.png",
+    "128": "src/assets/play_button_128.png"
+  },
+  "permissions": [
+    "background",
+    "tabs",
+    "scripting",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "host_permissions": ["https://www.youtube.com/@*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "48": "src/assets/play_button_gray.png"
+    },
+    "default_gray_icon": {
+      "48": "src/assets/play_button_48.png"
+    },
+    "default_title": "YouTube Channel Id Picker",
+    "default_popup": "src/popup/not-found.html"
+  }
+}

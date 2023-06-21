@@ -1,0 +1,50 @@
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 320px;
+  height: 180px;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 70px;
+}
+
+#channelId, #channelName {
+  margin-bottom: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+#copyButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  align-self: center;
+}
+
+p {
+  min-width: 200px;
+  max-width: 300px;
+  font-size: 14px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.short-paragraph {
+  min-width: initial;
+  white-space: nowrap;
+}
